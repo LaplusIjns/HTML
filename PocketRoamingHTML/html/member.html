@@ -34,7 +34,7 @@
                   <a class="nav-link text-white"  href="./html/member.html">會員</a>
                 </li>                
                 <li class="nav-item">
-                  <a class="nav-link text-white"  href="./html/cart.html">購物車</a>
+                  <a class="nav-link text-white"  href="./cart.html">購物車</a>
                 </li>
             </ul>
             <!-- 靠右 -->
@@ -103,25 +103,28 @@
         <!-- 左側導覽列 -->
         <div class="col-3 ">
             <div class="mx-3 my-3 px-3 py-3 border border-3 border-dark" style="border-radius: 15px;" >
-                <ul class="nav flex-column nav-tabs">
+                <ul class="nav flex-column nav-pills nav-fill">
                     <li class="nav-item ">
-                        <a class="nav-link " id="nav-member-tab" role="tab" data-bs-toggle="tab" aria-controls="tab1" href="#tab1" aria-selected="true">會員資料</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link " data-bs-toggle="tab" href="#tab2" aria-selected="false">許願清單</a>
+                        <a class="nav-link active" id="nav-member-tab"  data-bs-toggle="tab" aria-controls="tab1" href="#tab1" aria-selected="true">會員資料</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" data-bs-toggle="tab" href="#tab3" aria-selected="false">上架商品</a>
+                        <a class="nav-link " data-bs-toggle="tab" href="#tab2" aria-selected="false">交易紀錄</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" data-bs-toggle="tab" href="#tab4" aria-selected="false">已接收訂單</a>
+                        <a class="nav-link " data-bs-toggle="tab" href="#tab3" aria-selected="false">許願清單</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab5" aria-selected="false">下訂訂單</a>
+                      <a class="nav-link" data-bs-toggle="tab" href="#tab4" aria-selected="false">上架商品</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab6" aria-selected="false">管理者後台</a>
-                    </li> -->
+                      <a class="nav-link" data-bs-toggle="tab" href="#tab5" aria-selected="false">已接收訂單</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab6" aria-selected="false">下訂訂單</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab7" aria-selected="false">管理者後台</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -129,34 +132,42 @@
         <!-- 標籤內容 -->
         <div class="col-9 ">
             <div class="mx-3 my-3 px-3 py-3" id="myTab">
-                <div class="tab-content">
+                <div class="tab-content" id="nav-tabContent">
                     <!-- 會員資料 -->
-                    <div class="tab-pane fade" role="tabpanel" id="tab1" aria-labelledby="nav-member-tab">
-                        <div>
-                            <div class="card text-dark text-center">
+                    <div class="tab-pane fade show active" role="tabpanel" id="tab1" aria-labelledby="nav-member-tab">
+                        <div class="card">
+                            <div class="card-body text-dark text-center">
                                 <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"class="rounded-circle img-fluid" style="width: 100px;" />
+                                <h4 class="my-2">Julie L. Arsenault</h4>
+                                <p>ewdewdwdwedwedwedwedwedwedwedwedwedwedaadzxc</p>
+                                <button type="button" class="btn btn-primary btn-rounded btn-lg">
+                                    Message now
+                                </button>
                             </div>
                         </div>
                     </div>
                     <!-- 上架商品 -->
-                    <!-- <div class="tab-pane fade" id="tab2">
+                    <div class="tab-pane fade" id="tab2">
                         <h1>第二頁</h1>
-                    </div> -->
+                    </div>
                     <!-- 已接收訂單 -->
-                    <!-- <div class="tab-pane fade" id="tab3">
+                    <div class="tab-pane fade" id="tab3">
                         <h1>第三頁</h1>
-                    </div> -->
+                    </div>
                     <!-- 下訂訂單 -->
-                    <!-- <div class="tab-pane fade" id="tab4">
+                    <div class="tab-pane fade" id="tab4">
                         <h1>第四頁</h1>
-                    </div> -->
+                    </div>
                     <!-- 管理者後台 -->
-                    <!-- <div class="tab-pane fade" id="tab5">
+                    <div class="tab-pane fade" id="tab5">
                         <h1>第五頁</h1>
-                    </div> -->
-                    <!-- <div class="tab-pane fade" id="tab6">
+                    </div>
+                    <div class="tab-pane fade" id="tab6">
                         <h1>第六頁</h1>
-                    </div> -->
+                    </div>
+                    <div class="tab-pane fade" id="tab7">
+                        <h1>第六頁</h1>
+                    </div>
                 </div>
             </div>
         </div>
