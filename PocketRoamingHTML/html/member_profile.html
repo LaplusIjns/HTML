@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../bootstrap5/css/bootstrap.css" rel="stylesheet">
-    <link href="../css/index.css" rel="stylesheet">
+    <!-- <link href="../css/index.css" rel="stylesheet"> -->
     <script src="../bootstrap5/js/bootstrap.js"></script>
     <script src="../js/jquery.js"></script>
+
+    
     <title>Document</title>
 </head>
 <body>
@@ -97,8 +99,54 @@
         </div>
     </nav>
     <!-- main-body -->
+    <div class="row">
+        <!-- 左側導覽列 -->
+        <div class="col-3 ">
+            <div class="mx-3 my-3 px-3 py-3 border border-3 border-dark" style="border-radius: 15px;" >
+                <ul class="nav flex-column nav-pills nav-fill">
+                    <li class="nav-item ">
+                        <a class="nav-link active" id="nav-member-tab"   aria-controls="tab1" href="./member_profile.html" >會員資料</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./member_traderecord.html" >交易紀錄</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "   href="./member_wishlist.html" aria-selected="false">許願清單</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link"   href="./member_uploadproduct.html" aria-selected="false">上架商品</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link"   href="./member_receiveorder.html" aria-selected="false">已接收訂單</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"   href="./member_myorder.html" aria-selected="false">下訂訂單</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"   href="./member_backstage.html" aria-selected="false">管理者後台</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    
+        <!-- 標籤內容 -->
+        <div class="col-9 ">
+            <div class="mx-3 my-3 px-3 py-3" id="myTab">
+            <!-- 會員資料 -->
+                <div class="card">
+                    <div class="card-body text-dark text-center">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"class="rounded-circle img-fluid" style="width: 100px;" />
+                        <h4 class="my-2">Julie L. Arsenault</h4>
+                        <p>ewdewdwdwedwedwedwedwedwedwedwedwedwedaadzxc</p>
+                        <button type="button" class="btn btn-primary btn-rounded btn-lg">
+                            Message now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- foot -->
     <a href="javascript:window.scrollTo(0,0)">
         <footer class="footer bg-secondary text-center text-white mt-auto fixed-bottom">
