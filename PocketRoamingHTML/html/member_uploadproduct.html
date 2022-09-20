@@ -137,17 +137,38 @@
         <div class="col-9 ">
             <div class="mx-3 my-3 px-3 py-3 text-dark" id="myTab">
                 <!-- 上架商品 -->
-                <div class="text-dark " id="tab2">
-                    <h1>(上架商品) 商品名字 商品簡述 商品分類 價格 商品圖片 </h1>
-                </div>
-                <div>
+                <!-- <div class="text-dark " id="tab2">
+                    <h1>(上架商品) 商品名字 商品簡述 商品分類 價格 商品圖片 接受付款方式</h1>
+                </div> -->
+                <div class="">
                     <form>
-                        
+                        <div class="mx-3 my-3">
+                            <div class="my-2">
+                                <label class="form-label">商品名稱</label><br/>
+                                <input class="form-text" type="text">
+                            </div>
+                            <div>
+                                <label class="form-label" >簡介</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                            <select class="form-select my-3"><option>--商品分類--</option><option>--分類1--</option></select>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">上傳圖片</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <div class="">
+                                <label for="typeNumber" class="form-label">輸入金額</label>
+                                <input type="number" id="typeNumber" class="form-control" placeholder="輸入單位金額" />
+                            </div>
+
+                            <button class="btn btn-info text-white border-3 border-dark my-3">上架</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <!-- foot -->
     <a href="javascript:window.scrollTo(0,0)">
