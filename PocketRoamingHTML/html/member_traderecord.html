@@ -25,10 +25,10 @@
                   <a class="nav-link text-white" href="../index.html">首頁</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="./index.html">租借流程</a>
+                    <a class="nav-link text-white" href="../index.html">租借流程</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="./index.html">聊天室</a>
+                    <a class="nav-link text-white" href="./chat.html">聊天室</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-white active"  href="./member.html">會員</a>
@@ -114,6 +114,9 @@
                         <a class="nav-link "   href="./member_wishlist.html" >許願清單</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link"   href="./member_myproduct.html" aria-selected="false">我的商品</a>
+                    </li>
+                    <li class="nav-item">
                       <a class="nav-link"   href="./member_uploadproduct.html" >上架商品</a>
                     </li>
                     <li class="nav-item">
@@ -131,12 +134,94 @@
 
         <!-- 標籤內容 -->
         <div class="col-9 ">
-            <div class="mx-3 my-3 px-3 py-3 text-dark" id="myTab">
+            <!-- <div class="mx-3 my-3 px-3 py-3 text-dark" id="myTab"> -->
                 <!-- 交易紀錄 -->
-                <div class="text-dark " id="tab2">
+                <!-- <div class="text-dark " id="tab2">
                     <h1>交易紀錄 </h1>
+                    <p>訂單ID 圖 商品名稱 應到貨 歸還日 運送方式 歸還方式 租借日期 價格</p> 
+                </div> -->
+                <div class="mx-3  py-3 ">
+                    <div class="row d-flex justify-content-between align-items-center px-3">
+                        <div class="col-1">商品圖</div>
+                        <div class="col-1 ">訂單ID</div>
+                        <div class="col-1 ">商品名稱</div>
+                        <div class="col-1 d-flex">應到貨日</div>
+                        <div class="col-1 d-flex">到貨方式</div>
+                        <div class="col-1 d-flex">歸還日</div>
+                        <div class="col-1 d-flex">歸還方式</div>
+                        <div class="col-1 d-flex">租借日期</div>
+                        <div class="col-1 offset-lg-1">價格</div>
+                    </div>
                 </div>
-            </div>
+                <div class="mx-3 table-responsive py-3 ">
+                    <!-- 商品 -->
+                    <div class="card rounded-3 mb-4">  
+                        <div class="card-body  ">
+                            <div class="row d-flex justify-content-between align-items-center px-3">
+                                <img class="img-fluid rounded-3" style="height:100px;width:auto;" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/3.webp">
+                                <div class="col-1">
+                                    <p class="lead fw-normal mb-2">訂單ID</p>
+                                </div>
+                                <div class="col-1">
+                                    <p class="lead fw-normal mb-2">我是商品名字</p>
+                                </div>
+                                <div class="col-1 d-flex">
+                                    到貨日
+                                </div>
+                                <div class="col-1 d-flex">
+                                    到貨方式
+                                </div>
+                                <div class="col-1 d-flex">
+                                    歸還日
+                                </div>
+                                <div class="col-1 d-flex">
+                                    歸還方式
+                                </div>
+                                <div class="col-1 d-flex px-1 ">
+                                   租借日期
+                                </div>
+                                <div class="col-1 offset-lg-1">
+                                    $1000
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <!-- 商品結束 -->
+                    <!-- 商品 -->
+                    <div class="card rounded-3 mb-4">  
+                        <div class="card-body  ">
+                            <div class="row d-flex justify-content-between align-items-center px-3">
+                                <img class="img-fluid rounded-3" style="height:100px;width:auto;" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/3.webp">
+                                <div class="col-1">
+                                    <p class="lead fw-normal mb-2">訂單ID</p>
+                                </div>
+                                <div class="col-1">
+                                    <p class="lead fw-normal mb-2">我是商品名字</p>
+                                </div>
+                                <div class="col-1 d-flex">
+                                    到貨日
+                                </div>
+                                <div class="col-1 d-flex">
+                                    到貨方式
+                                </div>
+                                <div class="col-1 d-flex">
+                                    歸還日
+                                </div>
+                                <div class="col-1 d-flex">
+                                    歸還方式
+                                </div>
+                                <div class="col-1 d-flex px-1 ">
+                                   租借日期
+                                </div>
+                                <div class="col-1 offset-lg-1">
+                                    $1000
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <!-- 商品結束 -->
+                </div>
+            <!-- </div> -->
         </div>
     </div>
 
