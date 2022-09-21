@@ -7,15 +7,20 @@
     <!-- <link href="../css/index.css" rel="stylesheet"> -->
     <script src="../bootstrap5/js/bootstrap.js"></script>
     <script src="../js/jquery.js"></script>
-
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .rating-color {
+        color: orange;
+      }
+      </style>
     <title>Document</title>
+
 </head>
 <body>
     <!-- top-navbar navbar navbar-expand-sm navbar-dark bg-dark -->
     <nav class="navbar navbar-expand bg-info text-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../img/LOGO03.png" style="height:30px; width:auto;">
             </a>
             <ul class="nav nav-pills me-auto te mx-1">
@@ -29,6 +34,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="./chat.html">聊天室</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./wishpool.html">許願池</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-white active"  href="./member.html">會員</a>
@@ -134,16 +142,64 @@
 
         <!-- 標籤內容 -->
         <div class="col-9 ">
-            <div class="mx-3 my-3 px-3 py-3" id="myTab">
-            <!-- 會員資料 -->
-                <div class="card">
-                    <div class="card-body text-dark text-center">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"class="rounded-circle img-fluid" style="width: 100px;" />
-                        <h4 class="my-2">Julie L. Arsenault</h4>
-                        <p>ewdewdwdwedwedwedwedwedwedwedwedwedwedaadzxc</p>
-                        <button type="button" class="btn btn-primary btn-rounded btn-lg">
-                            聊天
-                        </button>
+            <div class="row">
+                <!-- 會員資料 -->
+                <div class="col-6">
+                    <div class="mx-1 my-3 px-2 py-3" id="myTab">
+                        <div class="card">
+                            <div class="card-body text-dark text-center">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"class="rounded-circle img-fluid" style="width: 100px;" />
+                                <h4 class="my-2">暱稱(帳號)</h4>
+                                <p>居住城市</p>
+                                <p>簡介</p>
+                                <!-- <p>E-mail </p> -->
+
+                                <button type="button" class="btn btn-primary btn-rounded btn-lg">
+                                    傳訊息
+                                </button>
+                                <button type="button" class="btn btn-primary btn-rounded btn-lg">
+                                    編輯
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 評價  -->
+                <div class="col-6">
+                    <div class="mx-1 my-3 px-2 py-3" id="myTab">
+                        <!-- 單一評價 -->
+                        <div class="card my-1">
+                            <div class="card-body text-dark d-flex justify-content-between">
+                                <img class="img-fluid rounded-3" style="height:25px;width:auto;" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/3.webp">
+                                <span>評價ID</span>
+                                <span>簡述</span>
+                                <div class="ratings">
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- 單一評價結束 -->
+                        <!-- 單一評價 -->
+                        <div class="card my-1">
+                            <div class="card-body text-dark d-flex justify-content-between">
+                                <img class="img-fluid rounded-3" style="height:25px;width:auto;" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/3.webp">
+                                <span>評價ID</span>
+                                <span>簡述</span>
+                                <div class="ratings">
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star"></i>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- 單一評價結束 -->
+                        
                     </div>
                 </div>
             </div>
