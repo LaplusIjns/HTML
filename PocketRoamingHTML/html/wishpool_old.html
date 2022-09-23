@@ -7,6 +7,7 @@
     <!-- <link href="../css/index.css" rel="stylesheet"> -->
     <script src="../bootstrap5/js/bootstrap.js"></script>
     <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
     <title>Document</title>
@@ -31,10 +32,10 @@
                     <a class="nav-link text-white" href="./chat.html">聊天室</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="./wishpool.html">許願池</a>
+                    <a class="nav-link text-white active" href="./wishpool.html">許願池</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white active"  href="./member.html">會員</a>
+                  <a class="nav-link text-white"  href="./member.html">會員</a>
                 </li>                
                 <li class="nav-item">
                   <a class="nav-link text-white"  href="./cart.html">購物車</a>
@@ -102,86 +103,37 @@
         </div>
     </nav>
     <!-- main-body -->
-    <div class="row">
-        <!-- 左側導覽列 -->
-        <div class="col-3 ">
-            <div class="mx-3 my-3 px-3 py-3 border border-3 border-dark" style="border-radius: 15px;" >
-                <ul class="nav flex-column nav-pills nav-fill">
-                    <li class="nav-item ">
-                        <a class="nav-link" id="nav-member-tab"   aria-controls="tab1" href="./member_profile.html" aria-selected="true">會員資料</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="./member_payment.html" >付款資訊</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="./member_traderecord.html" aria-selected="false">交易紀錄</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link "   href="./member_wishlist.html" aria-selected="false">許願清單</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"   href="./member_myproduct.html" aria-selected="false">我的商品</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link"   href="./member_uploadproduct.html" aria-selected="false">上架商品</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active"   href="./member_receiveorder.html" aria-selected="false">已接收訂單</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"   href="./member_myorder.html" aria-selected="false">下訂訂單</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"   href="./member_backstage.html" aria-selected="false">管理者後台</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- 標籤內容 -->
-        <div class="col-9 ">
-            <div class="mx-3 my-3 px-3 py-3 text-dark" id="myTab">
-                <!-- 已接收訂單 租借者 下訂日期 租借天數 金額 訂單狀態-->
-                <div class="text-dark " id="tab2">
-                    <h1>已接收訂單 </h1>
-                </div>
-                <div>
-                    <!-- 一筆訂單 -->
-                    <div class="card my-2">
-                        <div class="card-body d-flex justify-content-between">
-                            <a href="#" class="link btn bg-info text-white">租借者ID</a>
-                            <h5>下訂日期</h5>
-                            <h5>租借天數</h5>
-                            <h5>金額</h5>
-                            <h5>商品狀態</h5>
-                            <div class="btn-group">
-                                <button class="btn btn-primary rounded-4">明細</button>
-                                <button class="btn btn-info rounded-4">同意</button>
-                                <button class="btn btn-dark rounded-4">拒絕</button>
-                            </div>
-                        </div>
+    <div class="row justify-content-center">
+        <div class="col-8 py-3">
+            <!-- 一篇許願卡 -->
+            <div class="card d-flex mx-2 my-2">
+                <a href="#" class="text-dark" style="text-decoration: none;">
+                    <div class="card-body justify-content-between d-flex pt-4">
+                        <img class="img-fluid rounded-4" style="height:30px;width:auto;" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/3.webp">
+                        <span>標題</span>
+                        <span>作者</span>
+                        <span>時間</span>
+                        <i class="fa fa-comments" aria-hidden="true" style="height:30px;width:auto;">評論 3</i>
                     </div>
-                    <!-- 一筆訂單結束 -->
-
-                    <div class="card my-2">
-                        <div class="card-body d-flex justify-content-between">
-                            <a href="#" class="link btn bg-info text-white">租借者ID</a>
-                            <h5>下訂日期</h5>
-                            <h5>租借天數</h5>
-                            <h5>金額</h5>
-                            <h5>商品狀態</h5>
-                            <div class="btn-group">
-                                <button class="btn btn-primary rounded-4">明細</button>
-                                <button class="btn btn-info rounded-4">同意</button>
-                                <button class="btn btn-dark rounded-4">拒絕</button>
-                            </div>
-                        </div>
-                    </div>
-                       
-                </div>
+                </a>
             </div>
+            <!--  -->
+            <!-- 一篇許願卡 -->
+            <div class="card d-flex mx-2 my-2">
+                <a href="#" class="text-dark" style="text-decoration: none;">
+                    <div class="card-body justify-content-between d-flex pt-4">
+                        <img class="img-fluid rounded-4" style="height:30px;width:auto;" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/3.webp">
+                        <span>標題</span>
+                        <span>作者</span>
+                        <span>時間</span>
+                        <i class="fa fa-comments" aria-hidden="true" style="height:30px;width:auto;">評論 4</i>
+                    </div>
+                </a>
+            </div>
+            <!--  -->
         </div>
     </div>
+
 
     <!-- foot -->
     <a href="javascript:window.scrollTo(0,0)">
