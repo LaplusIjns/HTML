@@ -160,7 +160,7 @@
                                 <button type="button" class="btn btn-primary btn-rounded btn-lg">
                                     傳訊息
                                 </button>
-                                <button type="button" class="btn btn-primary btn-rounded btn-lg">
+                                <button id="editbtn" type="button" class="btn btn-primary btn-rounded btn-lg" data-bs-toggle="modal" data-bs-target="#editmodal"> 
                                     編輯
                                 </button>
                             </div>
@@ -208,6 +208,50 @@
             </div>
         </div>
     </div>
+    <!-- 跳出編輯室窗 -->
+    <div class="modal top fade" id="editmodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <h4 class="modal-title">編輯個人資料</h4>
+                    <button type="close" class="btn btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- <div class="mx-3 my-3"> -->
+                            <div class="my-2">
+                                <label class="form-label">暱稱　:　</label>
+                                <input class="form-text" type="text">
+                            </div>
+                            <div class="my-2">
+                                <label class="form-label">居住地:　</label>
+                                <input class="form-text" type="text">
+                            </div>
+                            <div>
+                                <label class="form-label" >自我簡介</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">上傳頭像</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">生日</label>
+                                <input class="form-control" type="date" id="productdate">
+                            </div>
+                        <!-- </div> -->
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">確定</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">取消</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- foot -->
     <a href="javascript:window.scrollTo(0,0)">
@@ -217,6 +261,7 @@
             </div>
         </footer>
     </a>
+    
 
     <!-- function 區域 -->
     <script>
